@@ -34,5 +34,4 @@ app/        Streamlit demo
 aws/        inference handler, Dockerfile, deployment notes
 reports/    metrics, tables, figures
 models/     saved sklearn / LightGBM / PyTorch models
-docs/       the job description
 ```

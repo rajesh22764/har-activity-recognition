@@ -1,0 +1,6 @@
+{
+  "cnn_single_mean": 0.9289673113901142,
+  "cnn_single_std": 0.011374102558512874,
+  "cnn_ensemble_acc": 0.9324737020699015,
+  "cnn_ensemble_macro_f1": 0.9328128573930865
+}

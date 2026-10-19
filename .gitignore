@@ -1,0 +1,11 @@
+# raw dataset and original archive (download from UCI instead)
+data/raw/
+human+activity+recognition+using+smartphones.zip
+# large / regenerable model
+models/random_forest.joblib
+# local tooling and caches
+.claude/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store

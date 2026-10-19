@@ -1,0 +1,13 @@
+numpy
+pandas
+scikit-learn
+scipy
+statsmodels
+matplotlib
+seaborn
+lightgbm
+shap
+torch
+streamlit
+joblib
+anthropic   # optional: only for the LLM summary

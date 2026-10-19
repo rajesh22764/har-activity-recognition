@@ -1,0 +1,57 @@
+{
+  "shape_train": [
+    7352,
+    561
+  ],
+  "shape_test": [
+    2947,
+    561
+  ],
+  "missing_values": 0,
+  "corr_pairs_gt_0.95": 2281,
+  "pca_components_for_90_95_99": [
+    63,
+    102,
+    179
+  ],
+  "kw_features_significant_fdr1pct": 557,
+  "kw_top5": [
+    {
+      "feature": "fBodyAccJerk-entropy()-X",
+      "epsilon_sq": 0.831
+    },
+    {
+      "feature": "fBodyBodyAccJerkMag-entropy()",
+      "epsilon_sq": 0.817
+    },
+    {
+      "feature": "fBodyAcc-bandsEnergy()-1,8",
+      "epsilon_sq": 0.813
+    },
+    {
+      "feature": "fBodyAcc-bandsEnergy()-1,16",
+      "epsilon_sq": 0.812
+    },
+    {
+      "feature": "fBodyAcc-std()-X",
+      "epsilon_sq": 0.811
+    }
+  ],
+  "moving_vs_static": {
+    "feature": "tBodyAcc-std()-X",
+    "median_moving": -0.21091266,
+    "median_static": -0.99155344,
+    "p": 0.0,
+    "rank_biserial": -0.9985830939076406
+  },
+  "sit_vs_stand": {
+    "significant_features": 333,
+    "max_abs_cohens_d": 2.0401536691831352,
+    "features_with_abs_d_gt_0.8": 15
+  },
+  "walking_pairs_max_abs_cohens_d": {
+    "WALKING vs WALKING_UPSTAIRS": 2.305406172405895,
+    "WALKING vs WALKING_DOWNSTAIRS": 2.9623831010495554,
+    "WALKING_UPSTAIRS vs WALKING_DOWNSTAIRS": 2.267023044439638
+  }
+}

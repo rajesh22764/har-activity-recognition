@@ -1,0 +1,134 @@
+{
+  "best_classical": "SVM (RBF)",
+  "shap_top10": {
+    "tGravityAcc-min()-X": 0.6205,
+    "tGravityAcc-mean()-X": 0.3787,
+    "fBodyAcc-bandsEnergy()-1,8": 0.3678,
+    "tBodyAcc-max()-X": 0.3161,
+    "tGravityAcc-min()-Y": 0.2814,
+    "angle(Y,gravityMean)": 0.2605,
+    "tGravityAcc-mean()-Y": 0.2221,
+    "tBodyAcc-correlation()-X,Y": 0.1914,
+    "fBodyGyro-maxInds-Z": 0.1801,
+    "tGravityAcc-max()-Y": 0.178
+  },
+  "shap_share_by_signal_family_top6": {
+    "tGravityAcc": 0.254,
+    "fBodyAcc": 0.122,
+    "fBodyGyro": 0.1,
+    "tBodyAcc": 0.092,
+    "tBodyGyro": 0.086,
+    "tBodyGyroJerk": 0.072
+  },
+  "top3_features_per_activity": {
+    "LAYING": [
+      "tGravityAcc-min()-X",
+      "tGravityAcc-mean()-X",
+      "tGravityAcc-energy()-X"
+    ],
+    "SITTING": [
+      "tGravityAcc-min()-X",
+      "angle(Y,gravityMean)",
+      "tGravityAcc-mean()-X"
+    ],
+    "STANDING": [
+      "tGravityAcc-min()-Y",
+      "angle(Y,gravityMean)",
+      "tGravityAcc-mean()-Y"
+    ],
+    "WALKING": [
+      "fBodyBodyAccJerkMag-max()",
+      "tBodyAcc-correlation()-X,Y",
+      "fBodyAcc-bandsEnergy()-9,16__2"
+    ],
+    "WALKING_DOWNSTAIRS": [
+      "fBodyAcc-bandsEnergy()-1,8",
+      "tBodyAcc-max()-X",
+      "tBodyAccJerk-max()-X"
+    ],
+    "WALKING_UPSTAIRS": [
+      "tBodyAcc-max()-X",
+      "fBodyAcc-bandsEnergy()-1,8",
+      "fBodyGyro-maxInds-Z"
+    ]
+  },
+  "top_confusions": [
+    [
+      "SITTING",
+      "STANDING",
+      48
+    ],
+    [
+      "WALKING_DOWNSTAIRS",
+      "WALKING_UPSTAIRS",
+      27
+    ],
+    [
+      "STANDING",
+      "SITTING",
+      17
+    ],
+    [
+      "WALKING_UPSTAIRS",
+      "WALKING",
+      15
+    ],
+    [
+      "WALKING",
+      "WALKING_DOWNSTAIRS",
+      8
+    ],
+    [
+      "WALKING_DOWNSTAIRS",
+      "WALKING",
+      8
+    ]
+  ],
+  "errors_total": 135,
+  "sit_stand_share_of_errors": 0.481,
+  "walking_family_share_of_errors": 0.481,
+  "subject_heterogeneity": {
+    "chi2": 80.06191354663756,
+    "p": 4.750570945941629e-14,
+    "min_acc": 0.8958333333333334,
+    "max_acc": 1.0,
+    "worst_subject": 9
+  },
+  "mcnemar_svm_vs_cnn": {
+    "svm_right_cnn_wrong": 151,
+    "cnn_right_svm_wrong": 87,
+    "p": 4.013754744072749e-05
+  },
+  "selective_prediction": [
+    {
+      "threshold": 0.0,
+      "coverage": 1.0,
+      "accuracy_on_kept": 0.9542
+    },
+    {
+      "threshold": 0.5,
+      "coverage": 0.9949,
+      "accuracy_on_kept": 0.9567
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.9562,
+      "accuracy_on_kept": 0.9723
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.9311,
+      "accuracy_on_kept": 0.9778
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.886,
+      "accuracy_on_kept": 0.9851
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.8324,
+      "accuracy_on_kept": 0.989
+    }
+  ]
+}

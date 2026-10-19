@@ -1,7 +1,5 @@
 # Human Activity Recognition from Smartphone Sensors
 
-End-to-end data-science project on the UCI HAR dataset, built to demonstrate the skills in the
-ZS Insights & Analytics Associate Data Scientist role (`docs/ADS A JD.docx`).
 **Read [REPORT.md](REPORT.md) first** for the findings; this file explains how the project is organised.
 
 ## What it shows (mapped to the job description)
